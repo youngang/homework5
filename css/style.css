@@ -2,7 +2,7 @@ body{
   font-family: 'Raleway', sans-serif; /* Test for this*/
   margin: 0;
   padding: 0;
-  font-size: 1.4em; /* test for this! Make all sizes em or rem */
+  font-size: 16pt; /* test for this! Make all sizes em or rem */
   background-image: url('../images/concrete_seamless.png');
 }
 
@@ -75,12 +75,11 @@ footer{
 .pricing{
     min-height: 500px;
     /*Your code here.*/
-    /*Don't forget to vertically and horizontally alight the card*/
+    /*Don't forget to vertically and horizontally align the card*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    align-items: flex-start;
 }
 
 .card {
@@ -138,6 +137,8 @@ footer{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  flex-direction: row;
   /*Your code here again.*/
 }
 
@@ -152,15 +153,20 @@ header{
   background: #fff;
   border-bottom: 3px solid #50C7C7;
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-flow: column;
+  /* flex-flow: column; */
+  flex-direction: column;
   /*Your  code here again.*/
 }
 
 .nav_links{
   /*Your code here again.*/
-  flex-flow: column;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  /* flex-flow: column; */
 }
 
 .nav_item a{
@@ -191,13 +197,14 @@ header{
   header{
     /*Your code here again.*/ 
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
   }
 
   .nav_links{
     /*Your code here again.*/
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
   }
 
   .nav_item a{
@@ -215,7 +222,7 @@ header{
   }
 
   .pricing{
-    align-items: start;
+    align-items: flex-start;
   }
 
   .gallery{
@@ -228,5 +235,8 @@ header{
 
 /*Your code here again.*/ 
 /*Add media query to handle reduced-motion*/
-@media (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion) {
+  #logo{
+    animation: none;
+  }
 }
