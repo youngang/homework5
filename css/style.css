@@ -55,14 +55,14 @@ footer{
 
 @-webkit-keyframes logo_wiggle{
   /*Your code here.*/
-  from{width: 25px;}
-  to{width: 420px;}
+  from{width: 25px; height: auto;}
+  to{width: 420px; height: auto}
 }
 
 @keyframes logo_wiggle{
   /*Your code here.*/
-  from{width: 25px;}
-  to{width: 420px;}
+  from{width: 25px; height: auto;}
+  to{width: 420px; height: auto}
 } 
 
 #logo{
@@ -217,7 +217,7 @@ header{
     flex-basis: 200px;
   }
 
-  .body{
+  body{
     background-image: none;
   }
 
@@ -225,8 +225,8 @@ header{
     align-items: flex-start;
   }
 
-  .gallery{
-    display: none;
+  .gallery, #gallery{
+    display: none;;
   }
 
   /*Your code here again.*/
