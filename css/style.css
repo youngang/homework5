@@ -69,6 +69,10 @@ footer{
    /*Your code here.*/
    animation-name: logo_wiggle;
    animation-duration: 15s;
+   animation-iteration-count: 1;
+   -webkit-animation-name: logo_wiggle;
+   -webkit-animation-duration: 15s;
+   -webkit-animation-iteration-count: 1;
 }
 
 /* Cards! */
@@ -156,6 +160,7 @@ header{
   align-items: center;
   /* flex-flow: column; */
   flex-direction: column;
+  justify-content: space-between;
   /*Your  code here again.*/
 }
 
@@ -235,8 +240,9 @@ header{
 
 /*Your code here again.*/ 
 /*Add media query to handle reduced-motion*/
-@media (prefers-reduced-motion) {
+@media (prefers-reduced-motion: reduce) {
   #logo{
     animation: none;
+    -webkit-animation: none;
   }
 }
