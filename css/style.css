@@ -67,23 +67,21 @@ footer{
 
 #logo{
    /*Your code here.*/
-   animation-name: logo_wiggle;
-   animation-duration: 15s;
-   animation-iteration-count: 1;
    -webkit-animation-name: logo_wiggle;
+   animation-name: logo_wiggle;
    -webkit-animation-duration: 15s;
+   animation-duration: 15s;
    -webkit-animation-iteration-count: 1;
+   animation-iteration-count: 1;
 }
 
 /* Cards! */
 .pricing{
     min-height: 500px;
-    /*Your code here.*/
-    /*Don't forget to vertically and horizontally align the card*/
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .card {
@@ -139,10 +137,10 @@ footer{
 .gallery{
   min-height: 600px;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
   /*Your code here again.*/
 }
 
@@ -157,21 +155,19 @@ header{
   background: #fff;
   border-bottom: 3px solid #50C7C7;
   display: flex;
-  align-items: center;
-  /* flex-flow: column; */
   flex-direction: column;
   justify-content: space-between;
-  /*Your  code here again.*/
+  align-items: center;
+  /* flex-flow: column; */
 }
 
 .nav_links{
   /*Your code here again.*/
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   flex-direction: column;
-
-  /* flex-flow: column; */
+  justify-content: center;
+  align-items: center;
+  /*Your code here again.*/
 }
 
 .nav_item a{
@@ -202,7 +198,6 @@ header{
   header{
     /*Your code here again.*/ 
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
   }
 
@@ -231,7 +226,7 @@ header{
   }
 
   .gallery, #gallery{
-    display: none;;
+    display: none;
   }
 
   /*Your code here again.*/
